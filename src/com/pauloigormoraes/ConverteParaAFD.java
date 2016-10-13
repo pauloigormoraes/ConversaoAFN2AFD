@@ -1,5 +1,4 @@
 package com.pauloigormoraes;
-
 import java.util.ArrayList;
 
 /**
@@ -12,13 +11,11 @@ public class ConverteParaAFD {
     String[] alfabeto;
 
     String[] tab_ax;
-    String va = "";
 
     public ConverteParaAFD(ArrayList<Estado> estados_usu, String[] alfabeto){
+
         this.eafn = estados_usu;
         this.alfabeto = alfabeto;
-
-//        ReportingArray(estados_usu);
 
         FazerTroca(estados_usu);
 
@@ -38,7 +35,7 @@ public class ConverteParaAFD {
                 if (tab_ax.length > 1) {
                     estados_usu.add(new Estado());
                     estados_usu.get(estados_usu.size()-1).id = estados_usu.get(i).paths.get(j).id;
-                    estados_usu.get(estados_usu.size()-1).paths = new ArrayList<>();
+                    estados_usu.get(estados_usu.size()-1).geraPaths(this.eafn,this.alfabeto.length);
 
                 }
 
@@ -52,10 +49,6 @@ public class ConverteParaAFD {
         for (int k = 0; k < array.size(); k++) {
             System.out.println(array.get(k).id + " | " + array.get(k).PrintPaths());
         }
-    }
-
-    public void CreateEstadoEmpty() {
-
     }
 
 }
