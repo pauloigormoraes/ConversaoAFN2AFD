@@ -2,7 +2,7 @@ package com.pauloigormoraes;
 import java.util.ArrayList;
 
 /**
- * Created by developer on 01/10/16.
+ * Created by Paulo Igor Moraes (http://www.moraespaulo.com).
  */
 
 public class Estado {

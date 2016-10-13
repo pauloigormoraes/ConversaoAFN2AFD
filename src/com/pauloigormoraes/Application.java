@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * Created by developer on 12/10/16.
+ * Created by Paulo Igor Moraes (http://www.moraespaulo.com).
  */
 
 public class Application {
